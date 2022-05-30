@@ -15,33 +15,33 @@ namespace Console_Calck
             double a;
             double b;
             double res = 0;
-            char oper;
+            char operation;
 
             Console.Write("Введите первое число:");
             a = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("\nВведите оператор:");
-            oper = Convert.ToChar(Console.ReadLine());
+            operation = Convert.ToChar(Console.ReadLine());
 
             Console.Write("\nВведите второе число:");
             b = Convert.ToDouble(Console.ReadLine());
 
-            if (oper == '+')
+            if (operation == '+')
             {
                 res = a + b;
             }
 
-            else if (oper == '-')
+            else if (operation == '-')
             {
                 res = a - b;
             }
 
-            else if (oper == '*')
+            else if (operation == '*')
             {
                 res = a * b;
             }
 
-            else if (oper == '/')
+            else if (operation == '/')
             {
                 if (b != 0)
                     res = a / b;
